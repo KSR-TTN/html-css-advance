@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form by amar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div id="parent-container">
+        <div id="form-container">
+            <form action="">
+                <div id="form-header" class="grey-white" >
+                    <h3 >Bug Report</h3>
+                </div>
+                <div id="form-main">
+                    <label for="title">Title:*</label>
+                    <input type="text" id="title">
+    
+                    <label for="description">Description:*</label>
+                    <textarea name="description" id="description" rows="4"></textarea>
+    
+                    <label for="os">Operating System:*</label>
+                    <select name="os" id="os" class="green-white">
+                        <option value="Windows XP">Windows XP</option>
+                        <option value="Linux">Linux</option>
+                        <option value="Unix">Unix</option>
+                        <option value="IOS">IOS</option>
+                    </select>
+    
+                    <label for="product">Product:*</label>
+                    <select name="product" id="product" class="green-white">
+                        <option value="Formoid">Formoid</option>
+                        <option value="Abc">Abc</option>
+                        <option value="Xyz">Xyz</option>
+                    </select>
+    
+                    <label for="version">Version:*</label>
+                    <input list="version-option" id="version">
+                    <datalist id="version-option" >
+                        <option value="14.7.00">14.7.00</option>
+                        <option value="14.8.00">14.8.00</option>
+                        <option value="14.9.00">14.9.00</option>
+                    </datalist>
+    
+                    <div id="radio-div">
+                    <label for="license">License:*</label>
+    
+                    <div id="radio-option-div">
+                        <input type="radio" name="license" value="Free" id="free-license">
+                    <label for="free-license">Free</label>
+                    <input type="radio" name="license" value="Business" id="business-license">
+                    <label for="business-license">Business</label>
+                    </div>
+                    </div>
+    
+                    <label for="severity">Severity:*</label>
+                    <select name="severity" id="severity" class="green-white">
+                        <option value="Critical">Critical</option>
+                        <option value="Abc">Abc</option>
+                        <option value="Xyz">Xyz</option>
+                    </select>
+    
+                    <label for="attachment">Attachment:*</label>
+                    <input type="file" id="attachment" class="grey-white">
+    
+    
+                </div>
+                <div id="form-footer">
+                    <button type="submit" class="green-white">Send</button>
+                </div>
+            </form>
+        </div> 
+    </div>
+</body>
+</html>
